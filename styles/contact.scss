@@ -1,0 +1,63 @@
+@import "./commons";
+
+.ts-contact-detail {
+  &-list {
+    padding: 0;
+    li {
+      display: grid;
+      grid-template-columns: 20px auto;
+      gap: 20px;
+      margin-bottom: 15px;
+      p {
+        word-break: break-word;
+      }
+      img,
+      svg {
+        width: 22px;
+      }
+      svg {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.ts-contact-form {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  .input-group {
+    display: block;
+    .form-label {
+      text-align: right;
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-primary {
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: $primary;
+      background-color: transparent;
+    }
+  }
+  @media (min-width: 575px) {
+    .input-group {
+      display: grid;
+      grid-template-columns: 150px auto;
+      gap: 20px;
+      align-items: center;
+      .form-label {
+        text-align: right;
+        margin-bottom: 0;
+      }
+    }
+    .btn-primary {
+      margin-left: 170px;
+      padding: 20px 50px 19px;
+      font-size: 20px;
+    }
+  }
+}
